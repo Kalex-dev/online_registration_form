@@ -146,6 +146,12 @@ footer {
         width: 50%;
     }
 
+    /* input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        display: inline-block;
+    } */
+
 }
 
 
