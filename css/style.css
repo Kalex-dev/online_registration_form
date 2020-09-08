@@ -1,0 +1,151 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Balsamiq Sans', cursive;
+    line-height: 1.6;
+    background-color: gainsboro;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-top: 0;
+    
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 1.8em;
+
+}
+
+/* input[placeholder] {
+    text-align: right;
+} */
+
+input {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    background-color: rgb(188, 236, 188);
+    border-radius: 15px 15px;
+    border: 2px solid rgb(115, 201, 201);
+    font-size: 1em;
+}
+
+input[pattern="[0-9]*"] {
+    width: 60%;
+}
+
+input:invalid {
+    border: 3px solid red;
+  }
+
+select[id="state"] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    background-color: rgb(188, 236, 188);
+    border-radius: 15px 15px;
+    border: 2px solid rgb(115, 201, 201);
+    font-size: 1em;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    color: blue;
+    font-size: 1.2em;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 100%;
+}
+
+legend {
+    color: green;
+}
+
+footer {
+    text-align: center;
+    color: rgb(134, 64, 38);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.main-header {
+    text-align: center;
+    background-color: #11504d;
+    color: whitesmoke;
+    height: 90px;
+    padding-top: 5px;
+}
+
+.form {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.signup {
+    border-bottom: 5px solid #3a3a3a;
+    text-align: center;
+    width: 95%;
+    margin: 30px auto 5px auto ;
+
+}
+
+.contact-title,
+.news-title {
+    border-top: 2px solid #3a3a3a;
+    margin: 0 0 20px auto;
+    padding-top: 30px;
+}
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    width: 10%;
+  }
+
+  .news-format {
+      margin-top: 10px;
+      margin-bottom: 5px;
+  }
+
+  .button {
+      width: 100%;
+  }
+
+  label.other {
+    color: green;
+  }
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    .form,
+    .signup {
+        width: 50%;
+    }
+
+}
+
+

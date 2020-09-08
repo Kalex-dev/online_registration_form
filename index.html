@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="main-header">
+            <h1>The Code Review</h1>
+        </header> <!--/.main header-->
+
+    <div class="signup">
+        <h2>Signup for our newsletter</h2>
+        <p class="inbox">Get the latest news on how your code is doing right in your inbox.</p>
+    </div>
+
+    <div class="form">
+
+        <form action="index.html" method="post"> 
+
+            <h2 class="contact-title">Contact Information</h2>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="name">Full Name</label><br>
+                <input type="text" placeholder="Required" id="name" name="user_name" required><br>
+                
+                <label for="email">Email Address</label><br>
+                <input type="text" placeholder="Required" id="email" name="user_email" required><br>
+
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" id="phone" name="user_phone"><br>
+
+                <label for="address">Street Address</label><br>
+                <input type="text" id="address" name="user_address"><br>
+
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="user_city"><br>
+
+                <label for="state">State</label><br>
+                <select id="state" name="user_state">
+        
+                    <option value="" disabled selected>Choose State</option>
+                    <option value="ct">Connecticut</option>
+                    <option value="ma">Massachusetts</option>
+
+                </select><br>
+
+                <label for="zip">Zip Code</label><br>
+                <input id="zip" type="text" pattern="[0-9]*" name="user_zip">
+
+            </fieldset>
+
+            <h2 class="news-title">Newsletter</h2>
+            <span>Select the newsletters you would like to recieve</span>
+
+            <fieldset>
+
+                <legend>Newsletter Types</legend>
+        
+                <input type="checkbox" id="html" value="newsletter_html"
+                name="user_newsletter"><label class="light" for="html">HTML News</label><br>
+
+                <input type="checkbox" id="css" value="newsletter_css"
+                name="user_newsletter"><label class="light" for="css">CSS News</label><br>
+
+                <input type="checkbox" id="javascript" value="newsletter_javascript"
+                name="user_newsletter"><label  class="light" for="javascript">Javascript News</label><br>
+
+            <h3 class="news-format">Newsletter format</h3>
+
+                <input type="radio" id="html-type" value="html" name="user-format"><label for="html-type"
+                class="light">HTML</label><br>
+
+                <input type="radio" id="plain-text" value="plain-text" name="user-format"><label 
+                for="plain-text" class="light">PLain text</label><br>
+
+                <label class="other" for="topics">Other topics you'd like to hear about</label><br>
+                <textarea id="topics" name="user_topics"></textarea><br>
+
+            </fieldset>
+
+            <button class="button" type="submit">Sign Up</button>
+
+        </form>
+    </div> <!--/.form-->
+    </div> <!--/.wrap-->
+
+    <footer>Copyright The Code Review</footer>
+    
+</body>
+</html>
