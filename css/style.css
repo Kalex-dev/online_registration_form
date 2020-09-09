@@ -135,6 +135,10 @@ footer {
     color: green;
   }
 
+  input:focus {
+    background-color: yellow;
+  }
+
 
 /* ================================= 
   Media Queries
@@ -146,11 +150,12 @@ footer {
         width: 50%;
     }
 
-    /* input[type="text"],
+    input[type="text"],
     input[type="email"],
     input[type="tel"] {
-        display: inline-block;
-    } */
+        width: 80%;
+        margin-left: 5px;
+    }
 
 }
 
